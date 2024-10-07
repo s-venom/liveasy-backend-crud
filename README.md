@@ -31,13 +31,15 @@ Postman: Used for testing and verifying the API endpoints.
 # API Endpoints
 HTTP Method	Endpoint	Description
 
-GET	/api/transport	Retrieves all transport data
+POST	/load	Adds new load data
 
-POST	/api/transport	Adds new transport data
+GET	/load	Retrieves all load data
 
-PUT	/api/transport/{id}	Updates existing transport data by ID
+GET /load/{loadId} Retrives load data with specific ID
 
-DELETE	/api/transport/{id}	Deletes transport data by ID
+PUT	/load/{loadId}	Updates existing load data by ID
+
+DELETE	/load/{loadId}	Deletes load data by ID
 
 
 # Installation and Setup
@@ -49,6 +51,7 @@ Navigate to the project directory:
  
 Install the dependencies and build the project:
  mvn clean install
+
 Configure the PostgreSQL database connection in application.properties:
 spring.datasource.url=jdbc:postgresql://localhost:5432/your-db
 spring.datasource.username=your-username
@@ -63,19 +66,19 @@ http://localhost:8080/load
 # Result Screenshots
 Here are some screenshots showing successful CRUD operations:
 
-POST request: Adding new transport data
+POST request: Adding new load data
 ![result](src/static/images/r1.png)
 ![result](src/static/images/r2.png)
 
-GET request: Retrieving all transport data
+GET request: Retrieving all load data & Retrives load data with specific ID
 ![result](src/static/images/r3.png)
 ![result](src/static/images/r4.png)
 
-PUT request: Updating transport data by ID
+PUT request: Updating load data by ID
 ![result](src/static/images/r5.png)
 ![result](src/static/images/r6.png)
 
-DELETE request: Deleting transport data by ID
+DELETE request: Deleting load data by ID
 ![result](src/static/images/r7.png)
 ![result](src/static/images/r8.png)
 
