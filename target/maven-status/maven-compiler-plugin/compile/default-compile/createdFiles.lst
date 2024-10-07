@@ -1,0 +1,6 @@
+com\liveasy\assigment\transportapi\TransportApiApplication.class
+com\liveasy\assigment\transportapi\controllers\LoadController.class
+com\liveasy\assigment\transportapi\controllers\TestController.class
+com\liveasy\assigment\transportapi\repositories\LoadRepository.class
+com\liveasy\assigment\transportapi\models\Load.class
+com\liveasy\assigment\transportapi\services\LoadService.class
